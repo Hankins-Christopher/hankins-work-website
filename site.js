@@ -13,20 +13,4 @@ document.querySelectorAll('[data-view]').forEach(button => button.addEventListen
   document.querySelector('#destination-label').textContent = views[selected].destination;
   document.querySelector('#diagram-description').textContent = views[selected].description;
 }));
-document.querySelectorAll('[data-service]').forEach(link => link.addEventListener('click', () => {
-  document.querySelector('#service').value = link.dataset.service;
-}));
-document.querySelector('#brief-form')?.addEventListener('submit', event => {
-  event.preventDefault();
-  const outcome = document.querySelector('#outcome');
-  if (!outcome.value.trim()) {outcome.setCustomValidity('Describe the outcome you want, then download your brief.');outcome.reportValidity();return;}
-  const service = document.querySelector('#service').value;
-  const systems = document.querySelector('#systems').value.trim() || 'To be discussed';
-  const brief = `HANKINS — PROJECT STARTING BRIEF\n\nService: ${service}\n\nDesired outcome:\n${outcome.value.trim()}\n\nSystems involved:\n${systems}\n\nNext discussion:\n- Goals, scope, and success criteria\n- Access and data handling\n- Timeline and deliverables\n- Authorization and rules of engagement for security testing\n\nPrepared locally at hankins.work. This brief has not been submitted.\nDo not include passwords, secrets, or confidential system details.\n`;
-  const url = URL.createObjectURL(new Blob([brief], {type:'text/plain;charset=utf-8'}));
-  const download = document.createElement('a'); download.href = url; download.download = 'hankins-project-brief.txt'; document.body.append(download); download.click(); download.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 2000);
-  document.querySelector('#brief-status').textContent = 'Your brief is ready. Keep the downloaded file for your project conversation.';
-});
-document.querySelector('#outcome')?.addEventListener('input', event => event.target.setCustomValidity(''));
 document.querySelector('#year').textContent = new Date().getFullYear();

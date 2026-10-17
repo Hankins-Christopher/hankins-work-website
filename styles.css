@@ -9,3 +9,7 @@
 
 @media(max-width:760px){.service-strip{flex-wrap:wrap;justify-content:flex-start;gap:10px 20px}.service-strip span{white-space:nowrap}.diagram-tabs button{min-height:44px}}
 @media(max-width:760px){.brief-form input,.brief-form select,.brief-form textarea{font-size:16px}}
+
+/* Informational focus rows have no inquiry controls. */
+.service-row{grid-template-columns:1fr 1.18fr}
+@media(max-width:760px){.service-row{grid-template-columns:1fr}.service-row>div{grid-column:1;grid-row:auto}}

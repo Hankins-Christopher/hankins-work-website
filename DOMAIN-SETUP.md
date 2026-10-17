@@ -20,11 +20,11 @@ Verified October 17, 2026: public nameservers are Cloudflare, and the apex domai
 Preserve unrelated records, including private service subdomains and MX/TXT mail records. Inspect any conflicting records for the apex or www before replacing them.
 
 3. Wait for GitHub's DNS check and certificate provisioning, then enable **Enforce HTTPS** in Pages settings.
-4. Verify `https://hankins.work/`, `https://hankins.work/privacy.html`, and the diagram and project brief download from a device on cellular data.
+4. Verify `https://hankins.work/`, `https://hankins.work/privacy.html`, and the interactive diagram from a device on cellular data.
 5. If the public site works on cellular but not at home, update only the local apex DNS override that currently points `hankins.work` to a private address. Keep unrelated internal subdomain overrides intact.
 
 Source: [GitHub's custom domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
 ## Contact details
 
-The public site currently links to Christopher's GitHub profile. Add an owner-confirmed business email to provide a direct inquiry channel. The brief builder creates a local text file and does not send inquiries.
+Client services are not currently available. The site has no inquiry channel or project brief planner.
