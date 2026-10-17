@@ -14,6 +14,6 @@ For the custom domain, follow [DOMAIN-SETUP.md](DOMAIN-SETUP.md). Configure the 
 
 ## Content and privacy
 
-The business uses the Hankins brand without asserting an unconfirmed LLC name, certifications, clients, provider affiliations, or membership eligibility. A contact email is awaiting owner confirmation. The current contact link points to Christopher's GitHub profile; the planner downloads a local text file and does not submit inquiries.
+The business uses the Hankins brand with the owner-confirmed attribution “A service of MAU Properties LLC,” without asserting certifications, clients, provider affiliations, or membership eligibility. A contact email is awaiting owner confirmation. The current contact link points to Christopher's GitHub profile; the planner downloads a local text file and does not submit inquiries.
 
 Fonts are self-hosted. Manrope is distributed under the SIL Open Font License in assets/OFL-Manrope.txt.
