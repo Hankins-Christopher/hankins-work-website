@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T00:00:00Z",
+  "title": "Design System: Hankins",
+  "extensions": {
+    "colorMeta": {
+      "orange": {"role": "primary", "displayName": "Burnt orange"},
+      "paper": {"role": "neutral", "displayName": "Warm paper"},
+      "dark": {"role": "secondary", "displayName": "Dark olive"},
+      "diagram-core": {"role": "secondary", "displayName": "Pale olive"},
+      "diagram-integration": {"role": "secondary", "displayName": "Integration peach"}
+    },
+    "typographyMeta": {
+      "display": {"displayName": "Display", "purpose": "Hero heading; responsive overrides are documented in DESIGN.md."},
+      "headline": {"displayName": "Headline", "purpose": "Section headings."},
+      "title": {"displayName": "Service title", "purpose": "Ruled service row headings."}
+    },
+    "shadows": [],
+    "motion": [
+      {"name": "control-color", "value": "background .2s, color .2s", "purpose": "Button and service-link interaction feedback."},
+      {"name": "core-color", "value": "background .3s", "purpose": "Diagram mode change."},
+      {"name": "boundary-arrive", "value": "1s cubic-bezier(.16,1,.3,1) both", "purpose": "Reveal diagram with clip-path inset(0 0 100% 0) to inset(0 0 0 0)."}
+    ],
+    "breakpoints": [
+      {"name": "mobile-max", "value": "760px"},
+      {"name": "intermediate-max", "value": "1050px"},
+      {"name": "wide-min", "value": "1500px"}
+    ],
+    "focus": {"value": "3px solid var(--orange)", "offset": "5px", "purpose": "All interactive controls; diagram tabs use pale olive outline color."},
+    "reducedMotion": "prefers-reduced-motion: reduce removes all animations and transitions and sets scroll-behavior to auto.",
+    "provenance": {"mode": "code-led scan", "sources": ["styles.css", "index.html", "site.js", "PRODUCT.md"], "approvedComp": false, "reviewDisposition": "ship", "materialBlockers": []}
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Orange project-planning anchor with trailing arrow.",
+      "html": "<a class=\"ds-primary\" href=\"#project\">Plan a project <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-primary{display:inline-flex;gap:28px;align-items:center;justify-content:space-between;padding:16px 22px;border:0;border-radius:4px;text-decoration:none;font:700 14px Manrope,Arial,sans-serif;background:var(--orange,#bc3e19);color:white;transition:background .2s,color .2s}.ds-primary svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.ds-primary:hover{background:#973012}.ds-primary:focus-visible{outline:3px solid var(--orange,#bc3e19);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Project field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Light-paper project planner field with visible keyboard focus.",
+      "html": "<label class=\"ds-label\" for=\"ds-systems\">Which systems are involved?</label><input class=\"ds-field\" id=\"ds-systems\" placeholder=\"Tools or system types — leave out secrets\">",
+      "css": ".ds-label{display:block;font:700 12px Manrope,Arial,sans-serif;margin:0 0 9px;color:var(--ink,#252720)}.ds-field{width:100%;min-width:0;background:#fbfaf6;border:1px solid #b6bbac;border-radius:4px;padding:12px 14px;color:var(--ink,#252720);font:400 13px Manrope,Arial,sans-serif;caret-color:var(--orange,#bc3e19)}.ds-field::placeholder{color:#6c7064;opacity:1}.ds-field:focus-visible{outline:3px solid var(--orange,#bc3e19);outline-offset:5px}@media(max-width:760px){.ds-field{font-size:16px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Engineering field guide",
+    "overview": "Warm paper, measured rules, restrained typography, and an olive system diagram make technical work legible. The visual language is editorial and practical: generous section spacing gives the content room, while fine borders organize the details. This record follows implemented code rather than an approved visual comp.",
+    "keyCharacteristics": ["Warm neutral reading surface", "Olive trust-boundary diagram", "Orange action accent", "Ruled editorial service rows", "Self-hosted Manrope", "Flat tonal depth"],
+    "rules": [{"name": "The Action Rule", "body": "Keep orange tied to action, emphasis, and interaction feedback; retain olive for the system illustration and process context.", "section": "colors"}],
+    "dos": ["Do preserve the warm paper, olive, and orange relationship.", "Do organize services with rules and deliberate columns.", "Do retain visible focus, mobile field sizing, and reduced-motion behavior."],
+    "donts": ["Don't replace flat editorial rows with floating shadow cards.", "Don't present the conceptual diagram as live telemetry.", "Don't imply unconfirmed clients, certifications, or partnerships through badges."]
+  }
+}
