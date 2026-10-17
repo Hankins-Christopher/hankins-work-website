@@ -13,3 +13,6 @@ Delegated: buildless HTML/CSS/JS for the public site, deployable with GitHub Pag
 
 ## Current availability
 Informational site only. Client services are not currently available. No contact prompts or project brief planner. Do not publish a pending certification notice.
+
+## About section
+Owner approved an About Christopher section. Background: Senior Cybersecurity Engineer at K-LOVE, from the supplied public LinkedIn profile. Credentials: CompTIA Security+ (owner confirms renewal through 2030), ISC2 Certified in Cybersecurity. Additional training is listed separately: Google Cybersecurity Certificate, Google IT Support Specialization, TryHackMe Web Fundamentals. Do not infer OSCP certification or add client inquiry prompts.
