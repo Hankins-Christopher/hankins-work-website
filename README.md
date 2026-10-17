@@ -10,7 +10,7 @@ Serve this directory with any static web server, for example `python -m http.ser
 
 The GitHub Actions workflow publishes only the explicitly selected public files and assets to GitHub Pages on pushes to main. Enable Pages with the GitHub Actions source.
 
-For the custom domain, follow [DOMAIN-SETUP.md](DOMAIN-SETUP.md). Configure the domain in Pages settings, then configure DNS and enable HTTPS once its certificate is issued. GitHub Actions publishing uses the Pages setting rather than a CNAME file. Local split DNS may also need its apex record changed.
+Production at hankins.work runs on Proxmox through a dedicated Cloudflare Tunnel. GitHub Pages remains a separate preview. Production updates also require deployment to Proxmox. See [DOMAIN-SETUP.md](DOMAIN-SETUP.md).
 
 ## Content and privacy
 
