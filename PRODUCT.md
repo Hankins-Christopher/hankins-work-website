@@ -19,3 +19,5 @@ Owner approved an About Christopher section. Background: Senior Cybersecurity En
 
 ## Expanded credential evidence
 Owner supplied seven LinkedIn screenshots showing CISSP, CISM, GSLC, CASP+, PenTest+, INE Junior Penetration Tester, TryHackMe PT1 and SAL1, ISACA CCOA, CySA+, Cloud+, Azure Fundamentals, Security+, Google credentials, Web Fundamentals, NSLS Foundations of Leadership, WGU MS in Cybersecurity and Information Assurance, and SNHU bachelor's degree with Summa Cum Laude. Previously supplied public profile also lists ISC2 Certified in Cybersecurity and Google IT Support. Use the heading Certifications earned; the CySA+ screenshot shows an expired status, so do not characterize the entire list as currently active. Owner explicitly requested no renewal/expiry dates on the website. Do not publish credential IDs or screenshots. Bachelor's major is unconfirmed and must not be inferred.
+
+Owner requested removal of the entire additional training section. Public About section presents education and certifications earned only; do not restore course certificates or training lists without a new request.
